@@ -4,6 +4,14 @@ module.exports = withModuleFederationPlugin({
 
   shared: {
     ...shareAll({ singleton: true, strictVersion: false, requiredVersion: 'auto' }),
-  },
+  }
+
+  // Explicitly share packages:
+  // shared: share({
+  //   "@angular/core": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
+  //   "@angular/common": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
+  //   "@angular/common/http": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
+  //   "@angular/router": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
+  // })
 
 });
