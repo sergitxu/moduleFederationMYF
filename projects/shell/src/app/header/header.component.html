@@ -1,11 +1,20 @@
-<vud-navbar type="secondary">
+<!-- <vud-navbar type="secondary">
+
     <vud-navbar-menu>
         <vud-navbar-menu-item label="Youforce"></vud-navbar-menu-item>
         <vud-navbar-menu-item label="Hr for others" [active]="true"></vud-navbar-menu-item>
         <vud-navbar-menu-item label="Personal" href="#blog"></vud-navbar-menu-item>
         <vud-navbar-menu-item label="Admin" routerLink="settings"></vud-navbar-menu-item>
-        <!-- <vud-navbar-menu-item label="Replacement" routerLink="/replacement"></vud-navbar-menu-item> -->
+        <vud-navbar-menu-item label="Replacement" routerLink="/replacement"></vud-navbar-menu-item>
     </vud-navbar-menu>
+
+     <vud-navbar-brand>ngx vud</vud-navbar-brand>
+    <vud-navbar-brand-option label="Visma Home"></vud-navbar-brand-option>
+    <vud-navbar-brand-option label="Autoinvoice" [active]="true"></vud-navbar-brand-option>
+    <vud-navbar-brand-option label="Autopay"></vud-navbar-brand-option>
+
+
+    
     <vud-navbar-right-menu>
         <li>
             <a>
@@ -13,4 +22,266 @@
             </a>
         </li>
     </vud-navbar-right-menu>
-</vud-navbar>
+</vud-navbar> -->
+
+<header class="navbar navbar-secondary demo-with-icons" id="vudNavDefault" role="navigation">
+
+    <nav class="collapse navbar-collapse" id="vudNavDefaultCollapseMain" aria-label="Menu">
+        <ul class="nav navbar-nav nav-tabs navbar-right first-level context-selector">
+            <li class="navbar-form" role="search">
+                <form class="form-group search-group">
+                    <label class="sr-only" for="form_control_ex1">Search</label>
+                    <input id="form_control_ex1" class="form-control" aria-label="searchBlock" type="text"
+                        placeholder="Search...">
+                    <span class="search-icon">Search icon</span>
+                    <span class="clear-search">Clear</span>
+                </form>
+            </li>
+            <li class="dropdown user-dropdown icon">
+                <a href="#!" tabindex="0" class="dropdown-toggle button-context" title="(Alt+K)" data-toggle="dropdown"
+                    role="button" aria-expanded="false" aria-label="Information area">
+                    Christian M.
+                    <span class="vismaicon vismaicon-dynamic vismaicon-menu vismaicon-user-placeholder"></span>
+                    <small class="selectedContext">Cool Company name AB</small>
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu company-selection" role="menu">
+                    <li class="user-details-area clear" role="menuitem">
+                        <div title="christian.mcbale.jr@somemail.com">
+                            <div class="user-image">
+                                <img src="../assets/img/avatar.png" alt="User avatar image">
+                            </div>
+                            <div class="user-text">
+                                <span>Christian McBale Jr.</span>
+                                <span class="text-disabled">christian.mcbale.jr@mail.com</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="divider"></li>
+                    <li role="menuitem">
+                        <a href="#!">My profile</a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#!">Language</a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#!">My location</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li role="menuitem">
+                        <p>Visma Recruit <br>Copyright 2021 Visma.</p>
+                    </li>
+                    <li role="menuitem">
+                        <p>Visma Recruit is made possible by Visma and other <a href="#!">open source and third party
+                                licenses</a>.</p>
+                    </li>
+                    <li role="menuitem">
+                        <p><a href="#!">Terms of Service</a></p>
+                    </li>
+                    <li class="divider"></li>
+                    <li role="menuitem">
+                        <a href="#!">Help</a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#!">Report a problem</a>
+                    </li>
+                    <li class="divider divider-strong"></li>
+                    <li role="menuitem">
+                        <button class="btn btn-lg" type="button">
+                            <span class="vismaicon vismaicon-sm vismaicon-dynamic vismaicon-logout"></span>
+                            Sign out
+                        </button>
+                    </li>
+                    <li class="mt-16 text-center" role="menuitem">
+                        <span>Latest login: 2022-09-09 15:33</span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="main-logo">
+        <img class="img-inline" alt="Youforce" src="../../assets/youforce_logo.png" width="60px">
+        <span class="logo-text">Youforce</span>
+    </div>
+</header>
+<!-- 
+<header class="navbar navbar-default demo-with-icons" id="vudNavDefault" role="navigation">
+    <div class="navbar-header">
+        <img class="img-inline" alt="Autoinvoice" src="../../assets/youforce_logo.png">
+        Youforce
+    </div>
+    <nav class="collapse navbar-collapse" id="vudNavDefaultCollapseMain" aria-label="Menu">
+        <ul class="nav navbar-nav nav-tabs first-level" id="vudNavDefaultFlMenu" role="menubar" aria-label="Menu">
+            <li>
+                <a href="#!" class="nav-item fl-menu-item" id="startPage" role="menuitem" aria-selected="false">Item
+                    one</a>
+            </li>
+            <li class="second-level-children active">
+                <a href="#!" class="nav-item fl-menu-item has-children" id="customers" role="menuitem"
+                    aria-label="Item two" aria-haspopup="true" aria-selected="true" aria-expanded="false">Item two
+                    <span class="caret"></span>
+                </a>
+                <ul class="second-level" id="slm-customers" aria-label="Item two" role="menu">
+                    <li role="none" class="dropdown">
+                        <a href="#!" tabindex="0" class="nav-item sl-menu-item dropdown-toggle" role="button"
+                            data-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+                            Item one<span class="caret"></span>
+                        </a>
+                        <ul class="third-level dropdown-menu" role="menu" aria-label="Item one">
+                            <li role="none">
+                                <a href="#!" class="nav-item tl-menu-item" role="menuitem">Item one</a>
+                            </li>
+                            <li role="none">
+                                <a href="#!" class="nav-item tl-menu-item" role="menuitem">Item two</a>
+                            </li>
+                            <li role="none" class="active">
+                                <a href="#!" class="nav-item tl-menu-item" role="menuitem">Item three</a>
+                            </li>
+                            <li role="none">
+                                <a href="#!" class="nav-item tl-menu-item" role="menuitem">Item four</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li role="none">
+                        <a href="#!" class="nav-item sl-menu-item">Item two</a>
+                    </li>
+                    <li role="none" class="active">
+                        <a href="#!" class="nav-item sl-menu-item">Item three</a>
+                    </li>
+                    <li role="none">
+                        <a href="#!" class="nav-item sl-menu-item">Item four</a>
+                    </li>
+                    <li role="none">
+                        <a href="#!" class="nav-item sl-menu-item">Item five</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#!" class="nav-item fl-menu-item" id="otherPage" role="menuitem" aria-selected="false">Item
+                    three</a>
+            </li>
+            <li class="menudrop dropdown hidden">
+                <a class="dropdown-toggle" id="vudNavDefaultMenuDropTrigger" href="#!" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="hidden">Menu</span>
+                    <i class="icon-align-justify"></i>
+                </a>
+                <ul class="dropdown-menu" id="vudNavDefaultMenuDropContent" role="menu" aria-expanded="false"
+                    aria-hidden="true">
+                    <li class="dropdown navbar-brand hidden" id="vudNavDefaultBrand"></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav nav-tabs navbar-right first-level context-selector">
+            <li class="navbar-form" role="search">
+                <form class="form-group search-group">
+                    <label class="sr-only" for="form_control_ex1">Search</label>
+                    <input id="form_control_ex1" class="form-control" aria-label="searchBlock" type="text"
+                        placeholder="Search...">
+                    <span class="search-icon">Search icon</span>
+                    <span class="clear-search">Clear</span>
+                </form>
+            </li>
+            <li class="icon attention">
+                <a href="#!" title="Alert" role="button" aria-label="Alert">
+                    <span class="vismaicon vismaicon-dynamic vismaicon-menu vismaicon-alert" aria-hidden="true"></span>
+                </a>
+            </li>
+            <li class="icon attention">
+                <a href="#!" title="Support" role="button" aria-label="Support">
+                    <span class="vismaicon vismaicon-dynamic vismaicon-menu vismaicon-chat" aria-hidden="true"></span>
+                </a>
+            </li>
+            <li class="dropdown shopping-cart icon">
+                <a role="button" class="dropdown-toggle" href="#!" aria-label="Shopping cart" data-toggle="dropdown"
+                    aria-expanded="false">
+                    <span aria-hidden="true"
+                        class="vismaicon  vismaicon-dynamic vismaicon-menu vismaicon-shopping-cart"></span>
+                    27.250,00 SEK
+                    <span class="caret"></span>
+                    <span class="badge">5</span>
+                </a>
+
+                <ul class="dropdown-menu" role="menu" aria-expanded="false" aria-hidden="true">
+                    <li role="menuitem">
+                        <a href="#!" class="">Shopping cart items</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="icon">
+                <a href="#!" role="button" aria-label="help">
+                    <span aria-hidden="true" class="vismaicon vismaicon-dynamic vismaicon-menu vismaicon-help"></span>
+                </a>
+            </li>
+            <li class="dropdown icon-dropdown icon hidden">
+                <a class="dropdown-toggle" id="vudNavDefaultIconsMenuDropContent" role="button" href="#!"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    aria-label="Open contextual overflow menu with more action options">
+                    <span class="vismaicon vismaicon-dynamic vismaicon-tools" aria-hidden="true"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu" aria-expanded="false" aria-hidden="true"
+                    aria-labelledby="vudNavDefaultIconsMenuDropContent"></ul>
+            </li>
+            <li class="dropdown user-dropdown icon">
+                <a href="#!" tabindex="0" class="dropdown-toggle button-context" title="(Alt+K)" data-toggle="dropdown"
+                    role="button" aria-expanded="false" aria-label="Information area">
+                    Christian M.
+                    <span class="vismaicon vismaicon-dynamic vismaicon-menu vismaicon-user-placeholder"></span>
+                    <small class="selectedContext">Cool Company name AB</small>
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu company-selection" role="menu">
+                    <li class="user-details-area clear" role="menuitem">
+                        <div title="christian.mcbale.jr@somemail.com">
+                            <div class="user-image">
+                                <img src="../assets/img/avatar.png" alt="User avatar image">
+                            </div>
+                            <div class="user-text">
+                                <span>Christian McBale Jr.</span>
+                                <span class="text-disabled">christian.mcbale.jr@mail.com</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="divider"></li>
+                    <li role="menuitem">
+                        <a href="#!">My profile</a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#!">Language</a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#!">My location</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li role="menuitem">
+                        <p>Visma Recruit <br>Copyright 2021 Visma.</p>
+                    </li>
+                    <li role="menuitem">
+                        <p>Visma Recruit is made possible by Visma and other <a href="#!">open source and third party
+                                licenses</a>.</p>
+                    </li>
+                    <li role="menuitem">
+                        <p><a href="#!">Terms of Service</a></p>
+                    </li>
+                    <li class="divider"></li>
+                    <li role="menuitem">
+                        <a href="#!">Help</a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#!">Report a problem</a>
+                    </li>
+                    <li class="divider divider-strong"></li>
+                    <li role="menuitem">
+                        <button class="btn btn-lg" type="button">
+                            <span class="vismaicon vismaicon-sm vismaicon-dynamic vismaicon-logout"></span>
+                            Sign out
+                        </button>
+                    </li>
+                    <li class="mt-16 text-center" role="menuitem">
+                        <span>Latest login: 2022-09-09 15:33</span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header> -->
