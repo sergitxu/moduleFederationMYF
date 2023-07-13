@@ -1,5 +1,7 @@
-@use '@vismaux/ngx-vud';
+/* @use '@vismaux/ngx-vud'; */
 @import '@vismaux/vud-icons/dist/css/vud-icons.min.css';
+
+@import "@vismaux/vud/dist/css/vud.min.css";
 
 body {
     padding-top: 0;
