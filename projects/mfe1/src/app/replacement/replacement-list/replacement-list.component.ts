@@ -8,6 +8,6 @@ import { AuthLibService } from 'auth-lib';
 })
 export class ReplacementListComponent {
   constructor(private service: AuthLibService) {
-    console.log('User Name', this.service.user);
+    console.log('User Name taken from Shell: ', this.service.user);
   }
 }
