@@ -1,15 +1,29 @@
 Preparar módulo interno:
 C:\Visma\moduleFederationMYF\projects\mfe1>
- - npm install
 
- - ng serve
+- ng serve
+
+
+
+ - npm install
 
 C:\Visma\moduleFederationMYF\projects\shell>
- - npm install
 
  - ng build
 
  - ng serve
+
+ create package.json in shell
+ {
+    "dependencies": {
+        "useless-lib": "^1.1.0"
+    }
+}
+
+npm i in other window
+
+ - npm install
+
 
 TODO:
 Separate npm packages for shell and mfe1 and load VUD library
