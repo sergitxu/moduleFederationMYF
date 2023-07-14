@@ -2,7 +2,6 @@
 
 This examples loads a microfrontend into a shell:
 
-![Microfrontend Loaded into Shell](./result.png)
 
 ## Important Files
 
