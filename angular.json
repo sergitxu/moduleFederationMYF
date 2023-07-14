@@ -21,7 +21,7 @@
 						"index": "projects/shell/src/index.html",
 						"main": "projects/shell/src/main.ts",
 						"polyfills": "projects/shell/src/polyfills.ts",
-						"tsConfig": "projects/shell/tsconfig.app.json",
+						"tsConfig": "projects/shell/tsconfig.base.json",
 						"assets": [
 							"projects/shell/src/favicon.ico",
 							"projects/shell/src/assets"
@@ -129,7 +129,7 @@
 						"index": "projects/mfe1/src/index.html",
 						"main": "projects/mfe1/src/main.ts",
 						"polyfills": "projects/mfe1/src/polyfills.ts",
-						"tsConfig": "projects/mfe1/tsconfig.app.json",
+						"tsConfig": "projects/mfe1/tsconfig.base.json",
 						"assets": [
 							"projects/mfe1/src/favicon.ico",
 							"projects/mfe1/src/assets"

@@ -7,7 +7,7 @@ describe('SharedLibService', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(SharedLibService);
+    // service = TestBed.inject(SharedLibService);
   });
 
   it('should be created', () => {

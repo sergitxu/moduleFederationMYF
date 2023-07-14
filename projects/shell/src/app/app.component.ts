@@ -1,4 +1,3 @@
-import { AuthLibService } from 'auth-lib';
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 
@@ -9,8 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'shell';
 
-  constructor(private service: AuthLibService, http: HttpClient) {
-    this.service.login('Sergio', null);
+  constructor(http: HttpClient) {
+    // this.service.login('Sergio', null);
   }
 
 }

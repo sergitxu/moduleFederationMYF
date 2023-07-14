@@ -9,6 +9,8 @@
 
 # dependencies
 /node_modules
+/projects/mfe1/node_modules
+/projects/shell/node_modules
 
 # profiling files
 chrome-profiler-events*.json

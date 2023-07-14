@@ -1,16 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthLibService } from 'auth-lib';
 
 @Component({
   selector: 'lib-other',
-  template: '<p>User: {{user}}</p>',
+  template: '<p>User: </p>',
   // styleUrls: ['./other.component.css']
 })
 export class OtherComponent implements OnInit {
 
   // user = 'A';
-  user = this.service.user;
-  constructor(private service: AuthLibService) { }
+  // user = this.service.user;
+  constructor() { }
 
   ngOnInit(): void {
   }

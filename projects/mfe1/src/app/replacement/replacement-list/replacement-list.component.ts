@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AuthLibService } from 'auth-lib';
+import { version } from 'useless-lib';
 
 
 @Component({
@@ -7,7 +7,7 @@ import { AuthLibService } from 'auth-lib';
   templateUrl: './replacement-list.component.html'
 })
 export class ReplacementListComponent {
-  constructor(private service: AuthLibService) {
-    console.log('User Name', this.service.user);
+  constructor() {
+    console.log('Useless version in Replacement list: ', version);
   }
 }
