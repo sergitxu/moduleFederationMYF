@@ -1,0 +1,81 @@
+Node version  18
+
+Command prompt
+
+Preparar módulo interno:
+C:\Visma\moduleFederationMYF\projects\mfe1>
+
+- npm install
+- ng serve
+
+Preparar carcasa
+C:\Visma\moduleFederationMYF\projects\shell>
+
+ - ng build
+
+ - ng serve
+
+ create package.json in shell
+ {
+    "dependencies": {
+        "useless-lib": "^1.1.0"
+    }
+}
+
+npm i in other window
+
+ - npm install
+
+Open in browser: http://localhost:5000/
+
+In the console log:
+"Sergio" is set on the Shell (Container) and consoled in mfe1 (Content).
+
+Console log useless-lib version in shell
+
+projects\shell\src\app\app.component.ts:
+
+import { AuthLibService } from 'auth-lib';
+import { HttpClient } from '@angular/common/http';
+import { Component } from '@angular/core';
+import { version } from 'useless-lib';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html'
+})
+export class AppComponent {
+  title = 'shell';
+
+  constructor(private service: AuthLibService, http: HttpClient) {
+    this.service.login('Sergio', null);
+    console.log(version);
+  }
+
+}
+
+
+replacement-list.component.ts:
+
+import { Component } from '@angular/core';
+import { AuthLibService } from 'auth-lib';
+import { version } from 'useless-lib';
+
+@Component({
+  selector: 'app-replacement-list',
+  templateUrl: './replacement-list.component.html'
+})
+export class ReplacementListComponent {
+  constructor(private service: AuthLibService) {
+    console.log('User Name', this.service.user);
+    console.log("mfe1 useless-lib version:" + version);
+  }
+}
+
+
+Useless Lib management:
+https://www.angulararchitects.io/en/aktuelles/getting-out-of-version-mismatch-hell-with-module-federation/
+
+TODO:
+Separate npm packages for shell and mfe1 and load VUD library
+Share VUD with moduleFederation

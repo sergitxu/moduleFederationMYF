@@ -12,6 +12,7 @@ import { MenuComponent } from './menu/menu.component';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 import { VudIconModule, VudNavbarModule, VudSidebarModule } from '@vismaux/ngx-vud';
+
 // import { SharedLibModule } from 'projects/shared-lib/src/public-api';
 
 @NgModule({
